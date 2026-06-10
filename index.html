@@ -4,34 +4,67 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Hang Thinh Co., Ltd | Paint Vietnam</title>
+<title>Hang Thinh Co., Ltd | Premium Paint Vietnam</title>
 
-<meta name="description" content="Premium paint distributor in Vietnam - Interior, Exterior, Waterproof, Industrial coatings.">
-<meta name="keywords" content="paint Vietnam, Biên Hòa paint, industrial coating, waterproof paint">
+<meta name="description" content="Hang Thinh Co., Ltd - Premium paint distributor in Vietnam offering interior, exterior, waterproof and industrial coatings.">
 
 <style>
 
-body{margin:0;font-family:Arial;background:#fff;}
-
-header{
-background:linear-gradient(135deg,#0D2F6F,#D62828);
-color:white;
-text-align:center;
-padding:60px 20px;
+/* GLOBAL */
+body{
+margin:0;
+font-family:Arial;
+background:#ffffff;
+color:#1a1a1a;
 }
 
-header h1{font-size:42px;margin:0;}
-header p{opacity:0.9;}
+/* HEADER */
+header{
+background:linear-gradient(135deg,#0D2F6F,#1a4fb3);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
 
-.container{
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+opacity:0.9;
+}
+
+/* BUTTONS */
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 20px;
+background:white;
+color:#0D2F6F;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+}
+
+/* SECTION */
+.section{
+padding:60px 20px;
 max-width:1100px;
 margin:auto;
-padding:40px 20px;
 }
 
-.grid{
+h2{
+text-align:center;
+color:#0D2F6F;
+margin-bottom:30px;
+}
+
+/* PRODUCTS GRID (DULUX STYLE) */
+.products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:20px;
 }
 
@@ -40,8 +73,8 @@ border:1px solid #eee;
 border-radius:12px;
 overflow:hidden;
 transition:0.3s;
-text-decoration:none;
-color:black;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 .card:hover{
@@ -55,10 +88,71 @@ height:180px;
 object-fit:cover;
 }
 
+.card-content{
+padding:15px;
+}
+
 .card h3{
-padding:10px;
 margin:0;
+font-size:18px;
 color:#0D2F6F;
+}
+
+.card button{
+margin-top:10px;
+width:100%;
+padding:10px;
+background:#D62828;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+
+/* CONTACT */
+.contact{
+background:#f7f9fc;
+padding:30px;
+border-radius:12px;
+}
+
+/* FORM */
+input,textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button.submit{
+background:#0D2F6F;
+color:white;
+padding:12px;
+border:none;
+width:100%;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* MAP */
+iframe{
+width:100%;
+height:300px;
+border:0;
+border-radius:10px;
+margin-top:15px;
+}
+
+/* FOOTER */
+footer{
+background:#0D2F6F;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
 }
 
 </style>
@@ -68,37 +162,142 @@ color:#0D2F6F;
 
 <header>
 <h1>HANG THINH CO., LTD</h1>
-<p>Premium Paint Distributor Vietnam</p>
+<p>Premium Paint Distributor in Vietnam</p>
+<a href="#products" class="btn">View Products</a>
 </header>
 
-<div class="container">
+<!-- PRODUCTS -->
+<section class="section" id="products">
 
-<h2>Our Products</h2>
+<h2>Paint Products</h2>
 
-<div class="grid">
+<div class="products">
 
-<a class="card" href="products/interior.html">
+<div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.39.jpeg">
+<div class="card-content">
 <h3>Interior Paint</h3>
-</a>
+<button onclick="order('Interior Paint')">Order via WhatsApp</button>
+</div>
+</div>
 
-<a class="card" href="products/exterior.html">
+<div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.39 (2).jpeg">
+<div class="card-content">
 <h3>Exterior Paint</h3>
-</a>
+<button onclick="order('Exterior Paint')">Order via WhatsApp</button>
+</div>
+</div>
 
-<a class="card" href="products/waterproof.html">
+<div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.39 (1).jpeg">
+<div class="card-content">
 <h3>Waterproof Paint</h3>
-</a>
+<button onclick="order('Waterproof Paint')">Order via WhatsApp</button>
+</div>
+</div>
 
-<a class="card" href="products/industrial.html">
+<div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.38.jpeg">
+<div class="card-content">
 <h3>Industrial Paint</h3>
-</a>
+<button onclick="order('Industrial Paint')">Order via WhatsApp</button>
+</div>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.37 (1).jpeg">
+<div class="card-content">
+<h3>Decorative Paint</h3>
+<button onclick="order('Decorative Paint')">Order via WhatsApp</button>
+</div>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.36.jpeg">
+<div class="card-content">
+<h3>Wall Coating</h3>
+<button onclick="order('Wall Coating')">Order via WhatsApp</button>
+</div>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.36 (1).jpeg">
+<div class="card-content">
+<h3>Protective Coating</h3>
+<button onclick="order('Protective Coating')">Order via WhatsApp</button>
+</div>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.35.jpeg">
+<div class="card-content">
+<h3>Premium Finish</h3>
+<button onclick="order('Premium Finish')">Order via WhatsApp</button>
+</div>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.35 (2).jpeg">
+<div class="card-content">
+<h3>Industrial Coating</h3>
+<button onclick="order('Industrial Coating')">Order via WhatsApp</button>
+</div>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.35 (1).jpeg">
+<div class="card-content">
+<h3>Special Paint</h3>
+<button onclick="order('Special Paint')">Order via WhatsApp</button>
+</div>
+</div>
 
 </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+
+<h2>Request Quote</h2>
+
+<div class="contact">
+
+<form onsubmit="send(event)">
+<input id="name" placeholder="Your Name" required>
+<input id="phone" placeholder="Phone Number" required>
+<textarea id="msg" placeholder="Your request" required></textarea>
+<button class="submit">Send via WhatsApp</button>
+</form>
+
+<iframe src="https://www.google.com/maps?q=Bien%20Hoa%20Vietnam&output=embed"></iframe>
+
 </div>
+
+</section>
+
+<footer>
+© 2026 Hang Thinh Co., Ltd
+</footer>
+
+<script>
+
+function order(product){
+window.open("https://wa.me/84971339722?text=I want " + product);
+}
+
+function send(e){
+e.preventDefault();
+let n=document.getElementById("name").value;
+let p=document.getElementById("phone").value;
+let m=document.getElementById("msg").value;
+
+let text=`Name:${n}%0APhone:${p}%0AMessage:${m}`;
+
+window.open("https://wa.me/84971339722?text="+text);
+}
+
+</script>
 
 </body>
 </html>
