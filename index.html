@@ -8,7 +8,7 @@
 
 <meta name="description" content="Hang Thinh Co., Ltd is a leading paint distributor in Vietnam offering interior, exterior, waterproof and industrial coatings. Contact us for quotation.">
 
-<meta name="keywords" content="paint Vietnam, interior paint, exterior paint, waterproof paint, industrial paint, Hang Thinh">
+<meta name="keywords" content="paint Vietnam, interior paint, exterior paint, waterproof paint, industrial paint, Hang Thinh Co Ltd">
 
 <meta property="og:title" content="Hang Thinh Co., Ltd">
 <meta property="og:description" content="Paint distributor in Vietnam">
@@ -34,15 +34,6 @@ color:white;
 margin:0 10px;
 text-decoration:none;
 font-weight:bold;
-}
-
-.lang button{
-background:white;
-border:none;
-padding:5px 10px;
-margin-left:5px;
-cursor:pointer;
-border-radius:5px;
 }
 
 header{
@@ -101,7 +92,13 @@ padding:20px;
 margin-top:30px;
 }
 
-.hidden{display:none;}
+.map{
+width:100%;
+height:350px;
+border:0;
+border-radius:10px;
+margin-top:15px;
+}
 
 </style>
 </head>
@@ -118,28 +115,24 @@ margin-top:30px;
 <a href="#more">More</a>
 <a href="#contact">Contact</a>
 </div>
-
-<div class="lang">
-<button onclick="setLang('en')">EN</button>
-<button onclick="setLang('vi')">VN</button>
-</div>
 </nav>
 
 <!-- HEADER -->
 <header id="home">
 <img src="logo.png" class="logo">
-<h1 id="t1">Paint Solutions Vietnam</h1>
-<p id="t2">Trusted Paint Manufacturer & Distributor</p>
+<h1>Paint Solutions Vietnam</h1>
+<p>Trusted Paint Manufacturer & Distributor</p>
 <img src="banner.jpeg" class="banner">
 </header>
 
 <!-- PRODUCTS -->
 <section class="section" id="products">
 
-<h2>Products</h2>
+<h2>10 Paint Products</h2>
 
 <div class="products">
 
+<!-- ORIGINAL 4 -->
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.39.jpeg">
 <h3>Interior Paint</h3>
@@ -164,38 +157,62 @@ margin-top:30px;
 <button class="order" onclick="order('Industrial Paint')">Order</button>
 </div>
 
-</div>
-</section>
-
-<!-- MORE PRODUCTS -->
-<section class="section" id="more">
-
-<h2>More Products</h2>
-
-<div class="products">
-
-<!-- 6 EXTRA EMPTY SLOTS -->
-<div class="card"><img src="banner.jpeg"><h3>Product 5</h3><button class="order" onclick="order('Product 5')">Order</button></div>
-<div class="card"><img src="banner.jpeg"><h3>Product 6</h3><button class="order" onclick="order('Product 6')">Order</button></div>
-<div class="card"><img src="banner.jpeg"><h3>Product 7</h3><button class="order" onclick="order('Product 7')">Order</button></div>
-<div class="card"><img src="banner.jpeg"><h3>Product 8</h3><button class="order" onclick="order('Product 8')">Order</button></div>
-<div class="card"><img src="banner.jpeg"><h3>Product 9</h3><button class="order" onclick="order('Product 9')">Order</button></div>
-<div class="card"><img src="banner.jpeg"><h3>Product 10</h3><button class="order" onclick="order('Product 10')">Order</button></div>
-
+<!-- NEW 6 PRODUCTS -->
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.37 (1).jpeg">
+<h3>Decorative Paint</h3>
+<button class="order" onclick="order('Decorative Paint')">Order</button>
 </div>
 
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.36.jpeg">
+<h3>Wall Coating</h3>
+<button class="order" onclick="order('Wall Coating')">Order</button>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.36 (1).jpeg">
+<h3>Protective Paint</h3>
+<button class="order" onclick="order('Protective Paint')">Order</button>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.35.jpeg">
+<h3>Premium Finish</h3>
+<button class="order" onclick="order('Premium Finish')">Order</button>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.35 (2).jpeg">
+<h3>Industrial Coating</h3>
+<button class="order" onclick="order('Industrial Coating')">Order</button>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.35 (1).jpeg">
+<h3>Special Paint</h3>
+<button class="order" onclick="order('Special Paint')">Order</button>
+</div>
+
+</div>
 </section>
 
 <!-- CONTACT -->
 <section class="section" id="contact">
 
-<h2>Contact</h2>
+<h2>Contact & Location</h2>
 
 <div class="contact">
 
-<p>📍 Biên Hòa, Đồng Nai</p>
+<p>📍 Biên Hòa, Đồng Nai, Vietnam</p>
 <p>📞 0971 339 722</p>
 <p>✉️ Hangthinhcoltd@yahoo.com</p>
+
+<!-- GOOGLE MAP -->
+<iframe class="map"
+src="https://www.google.com/maps/embed?pb=!1m18!..." 
+allowfullscreen="">
+</iframe>
 
 </div>
 
@@ -207,24 +224,8 @@ margin-top:30px;
 
 <script>
 
-// ORDER FUNCTION
 function order(product){
 window.open("https://wa.me/84971339722?text=I want " + product);
-}
-
-// LANGUAGE SWITCH
-function setLang(lang){
-
-if(lang === "vi"){
-document.getElementById("t1").innerText = "Giải pháp sơn Việt Nam";
-document.getElementById("t2").innerText = "Nhà phân phối sơn uy tín";
-}
-
-if(lang === "en"){
-document.getElementById("t1").innerText = "Paint Solutions Vietnam";
-document.getElementById("t2").innerText = "Trusted Paint Manufacturer & Distributor";
-}
-
 }
 
 </script>
