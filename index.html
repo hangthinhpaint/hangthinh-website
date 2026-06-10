@@ -1,103 +1,92 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Hang Thinh Co., Ltd | Paint Manufacturer & Distributor Vietnam</title>
+<title>Hang Thinh Co., Ltd | Paint Distributor Vietnam</title>
 
-<meta name="description" content="Hang Thinh Co., Ltd specializes in distributing interior paint, exterior paint, waterproof coatings and industrial paint in Vietnam. Contact us for fast quotation and delivery.">
+<meta name="description" content="Hang Thinh Co., Ltd - trusted paint distributor in Vietnam providing interior, exterior, waterproof and industrial coatings. Contact us for quotation.">
 
 <meta name="keywords" content="paint Vietnam, interior paint, exterior paint, waterproof paint, industrial paint, Hang Thinh Co Ltd">
 
 <meta property="og:title" content="Hang Thinh Co., Ltd">
-<meta property="og:description" content="Trusted paint distributor in Vietnam">
+<meta property="og:description" content="Paint distributor Vietnam">
 <meta property="og:type" content="website">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
-body{background:#f4f6f8;color:#333;}
 
-header{
-background:linear-gradient(135deg,#0D2F6F,#D62828);
-color:white;
-text-align:center;
-padding:60px 20px;
+body{
+margin:0;
+font-family:Arial;
+background:#f4f6f8;
 }
 
-.logo{max-width:160px;margin-bottom:10px;}
-.banner{width:100%;max-width:900px;margin-top:20px;border-radius:12px;}
+nav{
+background:#0D2F6F;
+color:white;
+display:flex;
+justify-content:space-between;
+padding:15px 20px;
+align-items:center;
+position:sticky;
+top:0;
+}
 
-h1{font-size:40px;}
-p{max-width:800px;margin:auto;}
-
-.btn{
-background:white;color:#D62828;
-padding:12px 20px;
-border-radius:6px;
-display:inline-block;
-margin-top:15px;
+nav a{
+color:white;
+margin:0 10px;
 text-decoration:none;
 font-weight:bold;
 }
 
-.container{padding:50px 20px;max-width:1100px;margin:auto;}
+header{
+text-align:center;
+padding:50px 20px;
+background:linear-gradient(135deg,#0D2F6F,#D62828);
+color:white;
+}
+
+.logo{width:120px;}
+.banner{width:90%;max-width:900px;border-radius:10px;margin-top:15px;}
+
+.section{
+padding:50px 20px;
+max-width:1100px;
+margin:auto;
+}
 
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
 }
 
 .card{
 background:white;
-padding:15px;
+padding:10px;
 border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,.1);
+box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
 .card img{width:100%;border-radius:10px;}
-.card h3{margin-top:10px;}
 
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-}
-
-.feature{
-background:white;
-padding:15px;
-border-radius:10px;
-text-align:center;
+button.order{
+background:#D62828;
+color:white;
+border:none;
+padding:8px;
+width:100%;
+border-radius:6px;
+cursor:pointer;
+margin-top:5px;
 }
 
 .contact{
 background:white;
-padding:25px;
+padding:20px;
 border-radius:10px;
 }
-
-.floating{
-position:fixed;
-right:15px;
-bottom:15px;
-display:flex;
-flex-direction:column;
-gap:10px;
-}
-
-.floating a{
-padding:10px 14px;
-border-radius:50px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-.wa{background:#25D366;}
-.zalo{background:#0068FF;}
-.fb{background:#1877F2;}
 
 form input,form textarea{
 width:100%;
@@ -107,25 +96,30 @@ border:1px solid #ccc;
 border-radius:6px;
 }
 
-button{
-background:#D62828;
+button.submit{
+background:#0D2F6F;
 color:white;
 padding:12px;
 border:none;
+width:100%;
 border-radius:6px;
 cursor:pointer;
-width:100%;
-font-weight:bold;
 }
 
-.product-btn{
+.map{
+width:100%;
+height:300px;
+border:0;
+border-radius:10px;
+margin-top:15px;
+}
+
+footer{
 background:#0D2F6F;
 color:white;
-padding:8px;
-border-radius:6px;
-text-decoration:none;
-display:inline-block;
-margin-top:8px;
+text-align:center;
+padding:20px;
+margin-top:30px;
 }
 
 </style>
@@ -133,91 +127,135 @@ margin-top:8px;
 
 <body>
 
+<!-- NAV -->
+<nav>
+<div><b>Hang Thinh Co., Ltd</b></div>
+<div>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HEADER -->
 <header>
 <img src="logo.png" class="logo">
-<h1>HANG THINH CO., LTD</h1>
-<p>Trusted Paint Manufacturer & Distributor in Vietnam</p>
-<a class="btn" href="#contact">Contact Us</a>
+<h1>Paint Solutions Vietnam</h1>
+<p>Trusted Paint Distributor</p>
 <img src="banner.jpeg" class="banner">
 </header>
 
-<section class="container">
+<!-- PRODUCTS -->
+<section class="section" id="products">
 
-<h2>Products</h2>
+<h2>Paint Products</h2>
 
 <div class="products">
 
+<!-- REAL PAINT PRODUCTS -->
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.39.jpeg">
 <h3>Interior Paint</h3>
-<a class="product-btn" href="https://wa.me/84971339722?text=I want Interior Paint">Order Now</a>
+<button class="order" onclick="order('Interior Paint')">Order</button>
 </div>
 
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.39 (2).jpeg">
 <h3>Exterior Paint</h3>
-<a class="product-btn" href="https://wa.me/84971339722?text=I want Exterior Paint">Order Now</a>
+<button class="order" onclick="order('Exterior Paint')">Order</button>
 </div>
 
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.39 (1).jpeg">
 <h3>Waterproof Paint</h3>
-<a class="product-btn" href="https://wa.me/84971339722?text=I want Waterproof Paint">Order Now</a>
+<button class="order" onclick="order('Waterproof Paint')">Order</button>
 </div>
 
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.38.jpeg">
 <h3>Industrial Paint</h3>
-<a class="product-btn" href="https://wa.me/84971339722?text=I want Industrial Paint">Order Now</a>
+<button class="order" onclick="order('Industrial Paint')">Order</button>
+</div>
+
+<!-- YOUR LOGO IMAGES (AS YOU SAID) -->
+<div class="card">
+<img src="logo.png">
+<h3>Company Logo</h3>
 </div>
 
 <div class="card">
-<img src="WhatsApp Image 2026-06-10 at 19.14.38 (1).jpeg">
-<h3>Decorative Paint</h3>
-<a class="product-btn" href="https://wa.me/84971339722?text=I want Decorative Paint">Order Now</a>
+<img src="logo.png">
+<h3>Brand Identity</h3>
 </div>
 
 <div class="card">
-<img src="WhatsApp Image 2026-06-10 at 19.14.37.jpeg">
-<h3>Premium Paint</h3>
-<a class="product-btn" href="https://wa.me/84971339722?text=I want Premium Paint">Order Now</a>
+<img src="logo.png">
+<h3>Hang Thinh Brand</h3>
+</div>
+
+<div class="card">
+<img src="logo.png">
+<h3>Official Logo</h3>
+</div>
+
+<div class="card">
+<img src="logo.png">
+<h3>Corporate Branding</h3>
+</div>
+
+<div class="card">
+<img src="logo.png">
+<h3>Company Visual</h3>
 </div>
 
 </div>
 </section>
 
-<section class="container">
+<!-- REQUEST FORM -->
+<section class="section">
 
 <h2>Request Quote</h2>
 
 <form onsubmit="sendQuote(event)">
+
 <input id="name" placeholder="Your Name" required>
 <input id="phone" placeholder="Phone Number" required>
 <textarea id="message" placeholder="What paint do you need?" required></textarea>
-<button type="submit">Send via WhatsApp</button>
+
+<button class="submit" type="submit">Send via WhatsApp</button>
+
 </form>
 
 </section>
 
-<section class="container" id="contact">
+<!-- CONTACT -->
+<section class="section" id="contact">
 
-<h2>Contact</h2>
+<h2>Contact & Location</h2>
 
 <div class="contact">
+
 <p>📍 Biên Hòa, Đồng Nai, Vietnam</p>
 <p>📞 0971 339 722</p>
 <p>✉️ Hangthinhcoltd@yahoo.com</p>
+
+<iframe class="map"
+src="https://www.google.com/maps?q=Bien%20Hoa%20Dong%20Nai&output=embed">
+</iframe>
+
 </div>
 
 </section>
 
-<div class="floating">
-<a class="wa" href="https://wa.me/84971339722">WhatsApp</a>
-<a class="zalo" href="https://zalo.me/0971339722">Zalo</a>
-<a class="fb" href="#">Facebook</a>
-</div>
+<footer>
+© 2026 Hang Thinh Co., Ltd
+</footer>
 
 <script>
+
+function order(product){
+window.open("https://wa.me/84971339722?text=I want " + product);
+}
+
 function sendQuote(e){
 e.preventDefault();
 
@@ -225,10 +263,11 @@ let name=document.getElementById("name").value;
 let phone=document.getElementById("phone").value;
 let message=document.getElementById("message").value;
 
-let text=`Name:${name}%0APhone:${phone}%0AMessage:${message}`;
+let text=`Name: ${name}%0APhone: ${phone}%0AMessage: ${message}`;
 
 window.open("https://wa.me/84971339722?text="+text);
 }
+
 </script>
 
 </body>
