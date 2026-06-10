@@ -20,7 +20,7 @@ background:#f5f7fa;
 color:#222;
 }
 
-/* HEADER (KEEP LOGO + BANNER) */
+/* HEADER */
 header{
 background:linear-gradient(135deg,#0D2F6F,#D62828);
 color:white;
@@ -105,7 +105,7 @@ border-radius:6px;
 cursor:pointer;
 }
 
-/* CONTACT FORM */
+/* CONTACT */
 .contact-box{
 background:white;
 padding:20px;
@@ -160,7 +160,7 @@ margin-top:30px;
 <a href="#contact">Contact</a>
 </nav>
 
-<!-- HEADER (LOGO + BANNER KEPT) -->
+<!-- HEADER -->
 <header>
 
 <img src="logo.png" class="logo">
@@ -243,7 +243,7 @@ margin-top:30px;
 
 </section>
 
-<!-- CONTACT (FORM + GPS KEPT) -->
+<!-- CONTACT -->
 <section class="section" id="contact">
 
 <h2>Contact Us</h2>
@@ -260,7 +260,7 @@ margin-top:30px;
 <input id="name" placeholder="Your Name" required>
 <input id="phone" placeholder="Phone Number" required>
 <textarea id="msg" placeholder="Your Request" required></textarea>
-<button class="submit">Send via WhatsApp</button>
+<button class="submit" type="submit">Send via WhatsApp</button>
 </form>
 
 <iframe src="https://www.google.com/maps?q=Bien%20Hoa%20Vietnam&output=embed"></iframe>
@@ -276,7 +276,8 @@ margin-top:30px;
 <script>
 
 function order(product){
-window.open("https://wa.me/84971339722?text=I want " + product);
+const msg = encodeURIComponent("I want " + product);
+window.open("https://wa.me/84971339722?text=" + msg, "_blank");
 }
 
 function send(e){
@@ -286,9 +287,11 @@ let n=document.getElementById("name").value;
 let p=document.getElementById("phone").value;
 let m=document.getElementById("msg").value;
 
-let text=`Name: ${n}%0APhone: ${p}%0AMessage: ${m}`;
+let text = encodeURIComponent(
+"Name: " + n + "\nPhone: " + p + "\nMessage: " + m
+);
 
-window.open("https://wa.me/84971339722?text="+text);
+window.open("https://wa.me/84971339722?text=" + text, "_blank");
 }
 
 </script>
