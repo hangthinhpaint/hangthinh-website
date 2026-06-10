@@ -25,9 +25,7 @@ text-align:center;
 padding:40px 20px;
 }
 
-.logo{
-width:120px;
-}
+.logo{width:120px;}
 
 .banner{
 width:90%;
@@ -80,14 +78,8 @@ height:160px;
 object-fit:cover;
 }
 
-.card h3{
-margin:10px;
-}
-
-.card p{
-margin:0 10px 10px;
-color:#666;
-}
+.card h3{margin:10px;}
+.card p{margin:0 10px 10px;color:#666;}
 
 /* CONTACT */
 .contact-box{
@@ -117,26 +109,37 @@ cursor:pointer;
 border-radius:6px;
 }
 
-/* FLOATING BUTTONS */
+/* FLOATING BUTTONS (FIXED PRO VERSION) */
 .floating{
 position:fixed;
 right:15px;
 bottom:15px;
 display:flex;
 flex-direction:column;
-gap:10px;
-z-index:999;
+gap:12px;
+z-index:9999;
 }
 
 .floating a{
-padding:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+padding:14px 16px;
 border-radius:50px;
 color:white;
 text-decoration:none;
 font-weight:bold;
-text-align:center;
+min-width:160px;
+box-shadow:0 6px 15px rgba(0,0,0,0.25);
+transition:0.2s;
 }
 
+.floating a:hover{
+transform:scale(1.05);
+}
+
+/* COLORS */
 .whatsapp{background:#25D366;}
 .zalo{background:#0068FF;}
 .facebook{background:#1877F2;}
@@ -167,24 +170,18 @@ max-width:400px;
 
 <body>
 
-<!-- NAV -->
 <nav>
 <a href="#products">Products</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<!-- HEADER -->
 <header>
-
 <img src="logo.png" class="logo">
 <h1>HANG THINH CO., LTD</h1>
 <p>Trusted Paint Distributor in Vietnam</p>
-
 <img src="banner.jpeg" class="banner">
-
 </header>
 
-<!-- PRODUCTS -->
 <section class="section" id="products">
 
 <h2>Our Paint Products</h2>
@@ -213,7 +210,6 @@ max-width:400px;
 
 </section>
 
-<!-- CONTACT -->
 <section class="section" id="contact">
 
 <h2>Contact Us</h2>
@@ -222,8 +218,6 @@ max-width:400px;
 
 <p>📍 Biên Hòa, Đồng Nai</p>
 <p>📞 0971 339 722</p>
-
-<h3>Request Quote</h3>
 
 <form onsubmit="send(event)">
 <input id="name" placeholder="Name" required>
@@ -236,14 +230,20 @@ max-width:400px;
 
 </section>
 
-<!-- FLOATING BUTTONS (RESTORED) -->
+<!-- FLOATING BUTTONS FIXED -->
 <div class="floating">
 
-<a class="whatsapp" href="https://wa.me/84971339722" target="_blank">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/84971339722" target="_blank">
+💬 WhatsApp
+</a>
 
-<a class="zalo" href="https://zalo.me/0971339722" target="_blank">Zalo</a>
+<a class="zalo" href="https://zalo.me/84971339722" target="_blank">
+🇻🇳 Zalo
+</a>
 
-<a class="facebook" href="#">Facebook</a>
+<a class="facebook" href="https://m.me/yourPageUsername" target="_blank">
+📘 Messenger
+</a>
 
 </div>
 
