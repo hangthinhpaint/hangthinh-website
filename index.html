@@ -109,7 +109,7 @@ cursor:pointer;
 border-radius:6px;
 }
 
-/* FLOATING BUTTONS */
+/* FLOATING BUTTONS (IMPROVED ONLY - NO LAYOUT CHANGE) */
 .floating{
 position:fixed;
 right:15px;
@@ -124,7 +124,6 @@ z-index:9999;
 display:flex;
 align-items:center;
 justify-content:center;
-gap:8px;
 padding:14px 16px;
 border-radius:50px;
 color:white;
@@ -133,6 +132,7 @@ font-weight:bold;
 min-width:160px;
 box-shadow:0 6px 15px rgba(0,0,0,0.25);
 transition:0.2s;
+font-size:14px;
 }
 
 .floating a:hover{
@@ -242,7 +242,7 @@ max-width:400px;
 🇻🇳 Zalo
 </a>
 
-<a class="facebook" href="https://m.me/yourPageUsername" target="_blank">
+<a class="facebook" href="https://m.me/YOUR_FACEBOOK_PAGE_USERNAME" target="_blank">
 📘 Messenger
 </a>
 
@@ -284,9 +284,13 @@ let n=document.getElementById("name").value;
 let p=document.getElementById("phone").value;
 let m=document.getElementById("msg").value;
 
-let text="Name: "+n+"%0APhone: "+p+"%0AMessage: "+m;
+let text =
+"📌 New Quote Request%0A%0A" +
+"Name: " + n + "%0A" +
+"Phone: " + p + "%0A" +
+"Message: " + m;
 
-window.open("https://wa.me/84971339722?text="+text);
+window.open("https://wa.me/84971339722?text=" + text);
 }
 
 </script>
