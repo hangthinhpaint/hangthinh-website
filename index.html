@@ -154,38 +154,39 @@ padding:20px;
 margin-top:30px;
 }
 
-/* ✅ ADDED FLOATING BUTTONS (NEW ONLY) */
+/* ✅ FIXED FLOATING BUTTONS (REAL FIX) */
 .floating{
 position:fixed;
-right:15px;
-bottom:15px;
+right:20px;
+bottom:20px;
 display:flex;
 flex-direction:column;
-gap:10px;
-z-index:9999;
+gap:12px;
+z-index:999999;
 }
 
 .floating a{
 display:flex;
 align-items:center;
 justify-content:center;
-padding:12px 14px;
+padding:14px 16px;
 border-radius:50px;
 color:white;
 text-decoration:none;
 font-weight:bold;
-min-width:150px;
-box-shadow:0 4px 10px rgba(0,0,0,0.25);
+min-width:160px;
 font-size:14px;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+transition:0.2s;
+}
+
+.floating a:hover{
+transform:scale(1.05);
 }
 
 .whatsapp{background:#25D366;}
 .zalo{background:#0068FF;}
 .facebook{background:#1877F2;}
-
-.floating a:hover{
-transform:scale(1.05);
-}
 
 </style>
 </head>
@@ -260,7 +261,7 @@ transform:scale(1.05);
 © 2026 Hang Thinh Co., Ltd
 </footer>
 
-<!-- ✅ ONLY ADDED: FLOATING CONTACT BUTTONS -->
+<!-- ✅ FIXED FLOATING BUTTONS -->
 <div class="floating">
 
 <a class="whatsapp" href="https://wa.me/84971339722" target="_blank">
@@ -271,7 +272,7 @@ transform:scale(1.05);
 🇻🇳 Zalo
 </a>
 
-<a class="facebook" href="https://m.me/YOUR_PAGE_USERNAME" target="_blank">
+<a class="facebook" href="https://m.me/100000000000000" target="_blank">
 📘 Messenger
 </a>
 
