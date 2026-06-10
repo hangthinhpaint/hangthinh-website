@@ -7,12 +7,10 @@
 <title>Hang Thinh Co., Ltd | Paint Vietnam</title>
 
 <meta name="description" content="Hang Thinh Co., Ltd - Paint distributor in Vietnam offering interior, exterior, waterproof and industrial coatings. Contact us for quotation.">
-
 <meta name="keywords" content="paint Vietnam, Biên Hòa paint, interior paint, exterior paint, waterproof paint, industrial paint">
 
 <style>
 
-/* BASIC RESET */
 body{
 margin:0;
 font-family:Arial;
@@ -47,6 +45,7 @@ padding:10px;
 text-align:center;
 position:sticky;
 top:0;
+z-index:1000;
 }
 
 nav a{
@@ -69,7 +68,7 @@ text-align:center;
 margin-bottom:25px;
 }
 
-/* PRODUCTS GRID */
+/* PRODUCTS */
 .products{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -92,6 +91,12 @@ object-fit:cover;
 .card h3{
 margin:10px;
 color:#0D2F6F;
+}
+
+.card p{
+margin:0 10px 10px;
+color:#666;
+font-size:14px;
 }
 
 .card button{
@@ -154,27 +159,19 @@ margin-top:30px;
 
 <body>
 
-<!-- NAV -->
 <nav>
 <a href="#products">Products</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<!-- HEADER -->
 <header>
-
 <img src="logo.png" class="logo">
-
 <h1>HANG THINH CO., LTD</h1>
 <p>Trusted Paint Distributor in Vietnam</p>
-
 <img src="banner.jpeg" class="banner">
-
 </header>
 
-<!-- PRODUCTS -->
 <section class="section" id="products">
-
 <h2>Our Paint Products</h2>
 
 <div class="products">
@@ -182,78 +179,77 @@ margin-top:30px;
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.39.jpeg">
 <h3>Interior Paint</h3>
-<p style="padding:0 10px;color:#666;"><b>Code:</b> HT-IP-001</p>
+<p><b>Code:</b> HT-IP-001</p>
 <button onclick="order('Interior Paint - HT-IP-001')">Order</button>
 </div>
 
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.39 (2).jpeg">
 <h3>Exterior Paint</h3>
-<p style="padding:0 10px;color:#666;"><b>Code:</b> HT-EP-002</p>
+<p><b>Code:</b> HT-EP-002</p>
 <button onclick="order('Exterior Paint - HT-EP-002')">Order</button>
 </div>
 
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.39 (1).jpeg">
 <h3>Waterproof Paint</h3>
-<p style="padding:0 10px;color:#666;"><b>Code:</b> HT-WP-003</p>
+<p><b>Code:</b> HT-WP-003</p>
 <button onclick="order('Waterproof Paint - HT-WP-003')">Order</button>
 </div>
 
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.38.jpeg">
 <h3>Industrial Paint</h3>
-<p style="padding:0 10px;color:#666;"><b>Code:</b> HT-IN-004</p>
+<p><b>Code:</b> HT-IN-004</p>
 <button onclick="order('Industrial Paint - HT-IN-004')">Order</button>
 </div>
 
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.37 (1).jpeg">
 <h3>Decorative Paint</h3>
-<p style="padding:0 10px;color:#666;"><b>Code:</b> HT-DP-005</p>
+<p><b>Code:</b> HT-DP-005</p>
 <button onclick="order('Decorative Paint - HT-DP-005')">Order</button>
 </div>
 
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.36.jpeg">
 <h3>Wall Coating</h3>
-<p style="padding:0 10px;color:#666;"><b>Code:</b> HT-WC-006</p>
+<p><b>Code:</b> HT-WC-006</p>
 <button onclick="order('Wall Coating - HT-WC-006')">Order</button>
 </div>
 
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.36 (1).jpeg">
 <h3>Protective Paint</h3>
-<p style="padding:0 10px;color:#666;"><b>Code:</b> HT-PR-007</p>
+<p><b>Code:</b> HT-PR-007</p>
 <button onclick="order('Protective Paint - HT-PR-007')">Order</button>
 </div>
 
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.35.jpeg">
 <h3>Premium Finish</h3>
-<p style="padding:0 10px;color:#666;"><b>Code:</b> HT-PF-008</p>
+<p><b>Code:</b> HT-PF-008</p>
 <button onclick="order('Premium Finish - HT-PF-008')">Order</button>
 </div>
 
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.35 (2).jpeg">
 <h3>Industrial Coating</h3>
-<p style="padding:0 10px;color:#666;"><b>Code:</b> HT-IC-009</p>
+<p><b>Code:</b> HT-IC-009</p>
 <button onclick="order('Industrial Coating - HT-IC-009')">Order</button>
 </div>
 
 <div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.35 (1).jpeg">
 <h3>Special Paint</h3>
-<p style="padding:0 10px;color:#666;"><b>Code:</b> HT-SP-010</p>
+<p><b>Code:</b> HT-SP-010</p>
 <button onclick="order('Special Paint - HT-SP-010')">Order</button>
 </div>
 
 </div>
+</section>
 
-<!-- CONTACT -->
 <section class="section" id="contact">
-
 <h2>Contact Us</h2>
 
 <div class="contact-box">
@@ -274,7 +270,6 @@ margin-top:30px;
 <iframe src="https://www.google.com/maps?q=Bien%20Hoa%20Vietnam&output=embed"></iframe>
 
 </div>
-
 </section>
 
 <footer>
