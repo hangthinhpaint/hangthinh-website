@@ -154,6 +154,39 @@ padding:20px;
 margin-top:30px;
 }
 
+/* ✅ ADDED FLOATING BUTTONS (NEW ONLY) */
+.floating{
+position:fixed;
+right:15px;
+bottom:15px;
+display:flex;
+flex-direction:column;
+gap:10px;
+z-index:9999;
+}
+
+.floating a{
+display:flex;
+align-items:center;
+justify-content:center;
+padding:12px 14px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+min-width:150px;
+box-shadow:0 4px 10px rgba(0,0,0,0.25);
+font-size:14px;
+}
+
+.whatsapp{background:#25D366;}
+.zalo{background:#0068FF;}
+.facebook{background:#1877F2;}
+
+.floating a:hover{
+transform:scale(1.05);
+}
+
 </style>
 </head>
 
@@ -197,55 +230,6 @@ margin-top:30px;
 <button onclick="order('Waterproof Paint - HT-WP-003')">Order</button>
 </div>
 
-<div class="card">
-<img src="WhatsApp Image 2026-06-10 at 19.14.38.jpeg">
-<h3>Industrial Paint</h3>
-<p><b>Code:</b> HT-IN-004</p>
-<button onclick="order('Industrial Paint - HT-IN-004')">Order</button>
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2026-06-10 at 19.14.37 (1).jpeg">
-<h3>Decorative Paint</h3>
-<p><b>Code:</b> HT-DP-005</p>
-<button onclick="order('Decorative Paint - HT-DP-005')">Order</button>
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2026-06-10 at 19.14.36.jpeg">
-<h3>Wall Coating</h3>
-<p><b>Code:</b> HT-WC-006</p>
-<button onclick="order('Wall Coating - HT-WC-006')">Order</button>
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2026-06-10 at 19.14.36 (1).jpeg">
-<h3>Protective Paint</h3>
-<p><b>Code:</b> HT-PR-007</p>
-<button onclick="order('Protective Paint - HT-PR-007')">Order</button>
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2026-06-10 at 19.14.35.jpeg">
-<h3>Premium Finish</h3>
-<p><b>Code:</b> HT-PF-008</p>
-<button onclick="order('Premium Finish - HT-PF-008')">Order</button>
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2026-06-10 at 19.14.35 (2).jpeg">
-<h3>Industrial Coating</h3>
-<p><b>Code:</b> HT-IC-009</p>
-<button onclick="order('Industrial Coating - HT-IC-009')">Order</button>
-</div>
-
-<div class="card">
-<img src="WhatsApp Image 2026-06-10 at 19.14.35 (1).jpeg">
-<h3>Special Paint</h3>
-<p><b>Code:</b> HT-SP-010</p>
-<button onclick="order('Special Paint - HT-SP-010')">Order</button>
-</div>
-
 </div>
 </section>
 
@@ -275,6 +259,23 @@ margin-top:30px;
 <footer>
 © 2026 Hang Thinh Co., Ltd
 </footer>
+
+<!-- ✅ ONLY ADDED: FLOATING CONTACT BUTTONS -->
+<div class="floating">
+
+<a class="whatsapp" href="https://wa.me/84971339722" target="_blank">
+💬 WhatsApp
+</a>
+
+<a class="zalo" href="https://zalo.me/84971339722" target="_blank">
+🇻🇳 Zalo
+</a>
+
+<a class="facebook" href="https://m.me/YOUR_PAGE_USERNAME" target="_blank">
+📘 Messenger
+</a>
+
+</div>
 
 <script>
 
