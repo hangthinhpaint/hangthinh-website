@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Hang Thinh Co., Ltd | Paint Vietnam - Interior & Industrial Coatings</title>
+<title>Hang Thinh Co., Ltd | Paint Vietnam</title>
 
-<meta name="description" content="Hang Thinh Co., Ltd is a professional paint distributor in Vietnam offering interior, exterior, waterproof and industrial coatings. Request a quote today.">
-<meta name="keywords" content="paint Vietnam, Biên Hòa paint, interior paint Vietnam, exterior paint, industrial paint, waterproof coating Vietnam">
-
-<meta property="og:title" content="Hang Thinh Co., Ltd - Paint Vietnam">
-<meta property="og:description" content="Professional paint distributor in Vietnam">
-<meta property="og:type" content="website">
+<meta name="description" content="Hang Thinh Co., Ltd - Paint distributor in Vietnam offering interior, exterior, waterproof and industrial coatings. Contact us for quotation.">
+<meta name="keywords" content="paint Vietnam, Biên Hòa paint, interior paint, exterior paint, waterproof paint, industrial paint">
 
 <style>
 
-/* RESET */
 body{
 margin:0;
 font-family:Arial;
-background:#f4f6f8;
+background:#f5f7fa;
 color:#222;
 }
 
-/* TOP BAR */
-.topbar{
-background:#0D2F6F;
-color:white;
-padding:10px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.lang button{
-background:white;
-border:none;
-padding:5px 10px;
-margin-left:5px;
-cursor:pointer;
-border-radius:5px;
-}
-
-/* HERO */
-.hero{
+/* HEADER */
+header{
 background:linear-gradient(135deg,#0D2F6F,#D62828);
 color:white;
 text-align:center;
-padding:60px 20px;
+padding:40px 20px;
 }
 
-.hero h1{
-font-size:40px;
+.logo{
+width:120px;
+margin-bottom:10px;
 }
 
-.hero p{
-max-width:700px;
-margin:auto;
+.banner{
+width:90%;
+max-width:900px;
+border-radius:12px;
+margin-top:15px;
 }
 
-/* BUTTON */
-.btn{
-background:white;
-color:#D62828;
-padding:12px 20px;
-border:none;
-border-radius:6px;
-cursor:pointer;
+/* NAV */
+nav{
+background:#0D2F6F;
+padding:10px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
 font-weight:bold;
+}
+
+/* SECTIONS */
+.section{
+max-width:1100px;
+margin:auto;
+padding:50px 20px;
+}
+
+h2{
+color:#0D2F6F;
+text-align:center;
+margin-bottom:25px;
 }
 
 /* PRODUCTS */
@@ -76,15 +73,13 @@ font-weight:bold;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:15px;
-padding:40px;
 }
 
 .card{
 background:white;
 border-radius:12px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
 overflow:hidden;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-cursor:pointer;
 }
 
 .card img{
@@ -95,57 +90,68 @@ object-fit:cover;
 
 .card h3{
 margin:10px;
+color:#0D2F6F;
 }
 
 .card p{
 margin:0 10px 10px;
 color:#666;
+font-size:14px;
+}
+
+.card button{
+margin:10px;
+width:calc(100% - 20px);
+padding:10px;
+border:none;
+background:#D62828;
+color:white;
+border-radius:6px;
+cursor:pointer;
 }
 
 /* CONTACT */
-.contact{
+.contact-box{
 background:white;
-padding:40px;
-max-width:800px;
-margin:auto;
+padding:20px;
 border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
 input,textarea{
 width:100%;
 padding:10px;
 margin:8px 0;
+border-radius:6px;
+border:1px solid #ccc;
 }
 
-button{
+button.submit{
+width:100%;
+padding:12px;
 background:#0D2F6F;
 color:white;
-padding:12px;
 border:none;
-width:100%;
+border-radius:6px;
 cursor:pointer;
 }
 
-/* MODAL */
-.modal{
-display:none;
-position:fixed;
-top:0;
-left:0;
+/* MAP */
+iframe{
 width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-justify-content:center;
-align-items:center;
+height:300px;
+border:0;
+border-radius:12px;
+margin-top:15px;
 }
 
-.modal-content{
-background:white;
+/* FOOTER */
+footer{
+background:#0D2F6F;
+color:white;
+text-align:center;
 padding:20px;
-border-radius:10px;
-width:90%;
-max-width:400px;
+margin-top:30px;
 }
 
 </style>
@@ -153,110 +159,142 @@ max-width:400px;
 
 <body>
 
-<!-- TOP -->
-<div class="topbar">
-<div>Hang Thinh Co., Ltd</div>
-<div class="lang">
-<button onclick="setLang('en')">EN</button>
-<button onclick="setLang('vn')">VN</button>
-</div>
-</div>
+<nav>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<!-- HERO -->
-<div class="hero">
-<h1 id="title">Professional Paint Solutions</h1>
-<p id="desc">Interior, Exterior & Industrial Coatings in Vietnam</p>
-<button class="btn" onclick="scrollToContact()">Request Quote</button>
-</div>
+<header>
+<img src="logo.png" class="logo">
+<h1>HANG THINH CO., LTD</h1>
+<p>Trusted Paint Distributor in Vietnam</p>
+<img src="banner.jpeg" class="banner">
+</header>
 
-<!-- PRODUCTS -->
+<section class="section" id="products">
+<h2>Our Paint Products</h2>
+
 <div class="products">
 
-<div class="card" onclick="openProduct('Interior Paint','HT-IP-001','WhatsApp Image 2026-06-10 at 19.14.39.jpeg')">
+<div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.39.jpeg">
 <h3>Interior Paint</h3>
-<p>HT-IP-001</p>
+<p><b>Code:</b> HT-IP-001</p>
+<button onclick="order('Interior Paint - HT-IP-001')">Order</button>
 </div>
 
-<div class="card" onclick="openProduct('Exterior Paint','HT-EP-002','WhatsApp Image 2026-06-10 at 19.14.39 (2).jpeg')">
+<div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.39 (2).jpeg">
 <h3>Exterior Paint</h3>
-<p>HT-EP-002</p>
+<p><b>Code:</b> HT-EP-002</p>
+<button onclick="order('Exterior Paint - HT-EP-002')">Order</button>
 </div>
 
-<div class="card" onclick="openProduct('Waterproof Paint','HT-WP-003','WhatsApp Image 2026-06-10 at 19.14.39 (1).jpeg')">
+<div class="card">
 <img src="WhatsApp Image 2026-06-10 at 19.14.39 (1).jpeg">
 <h3>Waterproof Paint</h3>
-<p>HT-WP-003</p>
+<p><b>Code:</b> HT-WP-003</p>
+<button onclick="order('Waterproof Paint - HT-WP-003')">Order</button>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.38.jpeg">
+<h3>Industrial Paint</h3>
+<p><b>Code:</b> HT-IN-004</p>
+<button onclick="order('Industrial Paint - HT-IN-004')">Order</button>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.37 (1).jpeg">
+<h3>Decorative Paint</h3>
+<p><b>Code:</b> HT-DP-005</p>
+<button onclick="order('Decorative Paint - HT-DP-005')">Order</button>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.36.jpeg">
+<h3>Wall Coating</h3>
+<p><b>Code:</b> HT-WC-006</p>
+<button onclick="order('Wall Coating - HT-WC-006')">Order</button>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.36 (1).jpeg">
+<h3>Protective Paint</h3>
+<p><b>Code:</b> HT-PR-007</p>
+<button onclick="order('Protective Paint - HT-PR-007')">Order</button>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.35.jpeg">
+<h3>Premium Finish</h3>
+<p><b>Code:</b> HT-PF-008</p>
+<button onclick="order('Premium Finish - HT-PF-008')">Order</button>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.35 (2).jpeg">
+<h3>Industrial Coating</h3>
+<p><b>Code:</b> HT-IC-009</p>
+<button onclick="order('Industrial Coating - HT-IC-009')">Order</button>
+</div>
+
+<div class="card">
+<img src="WhatsApp Image 2026-06-10 at 19.14.35 (1).jpeg">
+<h3>Special Paint</h3>
+<p><b>Code:</b> HT-SP-010</p>
+<button onclick="order('Special Paint - HT-SP-010')">Order</button>
 </div>
 
 </div>
+</section>
 
-<!-- CONTACT -->
-<div class="contact" id="contact">
-<h2 id="contactTitle">Request Quote</h2>
+<section class="section" id="contact">
+<h2>Contact Us</h2>
 
-<input id="name" placeholder="Name">
-<input id="phone" placeholder="Phone">
-<textarea id="msg" placeholder="Message"></textarea>
+<div class="contact-box">
 
-<button onclick="send()">Send via WhatsApp</button>
+<p>📍 Biên Hòa, Đồng Nai, Vietnam</p>
+<p>📞 0971 339 722</p>
+<p>✉️ Hangthinhcoltd@yahoo.com</p>
+
+<h3>Request Quote</h3>
+
+<form onsubmit="send(event)">
+<input id="name" placeholder="Your Name" required>
+<input id="phone" placeholder="Phone Number" required>
+<textarea id="msg" placeholder="Your Request" required></textarea>
+<button class="submit" type="submit">Send via WhatsApp</button>
+</form>
+
+<iframe src="https://www.google.com/maps?q=Bien%20Hoa%20Vietnam&output=embed"></iframe>
+
 </div>
+</section>
 
-<!-- MODAL -->
-<div class="modal" id="modal">
-<div class="modal-content">
-<h3 id="pname"></h3>
-<p id="pcode"></p>
-<button onclick="order()">Order Now</button>
-<button onclick="closeModal()">Close</button>
-</div>
-</div>
+<footer>
+© 2026 Hang Thinh Co., Ltd
+</footer>
 
 <script>
 
-let currentProduct="";
-
-function openProduct(name,code,img){
-currentProduct=name+" - "+code;
-document.getElementById("pname").innerText=name;
-document.getElementById("pcode").innerText=code;
-document.getElementById("modal").style.display="flex";
+function order(product){
+const msg = encodeURIComponent("I want " + product);
+window.open("https://wa.me/84971339722?text=" + msg, "_blank");
 }
 
-function closeModal(){
-document.getElementById("modal").style.display="none";
-}
+function send(e){
+e.preventDefault();
 
-function order(){
-window.open("https://wa.me/84971339722?text=I want "+currentProduct);
-}
-
-function send(){
 let n=document.getElementById("name").value;
 let p=document.getElementById("phone").value;
 let m=document.getElementById("msg").value;
 
-let text="Name:"+n+"%0APhone:"+p+"%0AMessage:"+m;
+let text = encodeURIComponent(
+"Name: " + n + "\nPhone: " + p + "\nMessage: " + m
+);
 
-window.open("https://wa.me/84971339722?text="+text);
-}
-
-/* LANGUAGE */
-function setLang(lang){
-if(lang==="vn"){
-document.getElementById("title").innerText="Giải pháp sơn chuyên nghiệp";
-document.getElementById("desc").innerText="Sơn nội thất, ngoại thất và công nghiệp tại Việt Nam";
-document.getElementById("contactTitle").innerText="Yêu cầu báo giá";
-}else{
-document.getElementById("title").innerText="Professional Paint Solutions";
-document.getElementById("desc").innerText="Interior, Exterior & Industrial Coatings in Vietnam";
-document.getElementById("contactTitle").innerText="Request Quote";
-}
-}
-
-function scrollToContact(){
-document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+window.open("https://wa.me/84971339722?text=" + text, "_blank");
 }
 
 </script>
